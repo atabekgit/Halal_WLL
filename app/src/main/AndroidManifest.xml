@@ -19,7 +19,7 @@
             android:name=".namaz_time.Namaz_Time_Activity"
             android:exported="false" />
         <activity
-            android:name=".main_halal_activity.Main_Halal_Actovity"
+            android:name=".main_halal_activity.Main_Halal_Activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity.MainActivity"

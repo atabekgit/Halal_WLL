@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".startfragment.ChooseFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:backgroundTint="#94B1C8"/>
+    <TextView
+        android:id="@+id/btnCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sizeOfButton"
+        android:fontFamily="@font/ttv"
+        android:text="@string/text_country"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/input_shape"
+        android:padding="@dimen/paddingAll"
+        android:layout_marginHorizontal="@dimen/marginWidthBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/btnLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_language"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/input_shape"
+        android:textSize="@dimen/sizeOfButton"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ttv"
+        android:padding="@dimen/paddingAll"
+        android:layout_marginBottom="@dimen/marginBetweenBtn"
+        app:layout_constraintStart_toStartOf="@id/btnCountry"
+        app:layout_constraintEnd_toEndOf="@id/btnCountry"
+        app:layout_constraintBottom_toTopOf="@id/btnCountry" />
+
+    <TextView
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBetweenBtn"
+        android:background="@drawable/shape_button"
+        android:fontFamily="@font/ttv"
+        android:padding="@dimen/paddingAll"
+        android:text="@string/text_next"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#00B8D4"
+        android:textSize="@dimen/sizeOfButton"
+        app:layout_constraintEnd_toEndOf="@id/btnCountry"
+        app:layout_constraintStart_toStartOf="@id/btnCountry"
+        app:layout_constraintTop_toBottomOf="@id/btnCountry" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

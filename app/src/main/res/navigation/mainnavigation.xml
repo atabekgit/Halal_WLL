@@ -5,19 +5,21 @@
     android:id="@+id/mainnavigation"
     app:startDestination="@id/mainFragment">
 
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.halal.halal_wll.mainfragment.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+
     <fragment
         android:id="@+id/catalogFragment"
         android:name="com.halal.halal_wll.mainfragment.CatalogFragment"
         android:label="fragment_catalog"
         tools:layout="@layout/fragment_catalog" />
     <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.halal.halal_wll.mainfragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
         android:id="@+id/menuFragment"
         android:name="com.halal.halal_wll.mainfragment.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" />
+
 </navigation>

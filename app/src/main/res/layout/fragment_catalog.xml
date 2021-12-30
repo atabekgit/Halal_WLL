@@ -1,14 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".mainfragment.CatalogFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolnar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/halal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/scan" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nazad" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Каталог"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/line_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolnar">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="51dp"
+
+            android:background="@drawable/shape_halal">
+
+            <ImageView
+                android:id="@+id/calender_hijriy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/hijriy" />
+
+            <TextView
+                android:id="@+id/namaz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/calender_hijriy"
+                android:text="@string/hijriy"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/saat"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/calender_hijriy"
+                android:text="@string/data"
+                android:textColor="#FFFFFF"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/shape_halal">
+
+            <ImageView
+                android:id="@+id/img_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/ocklok" />
+
+            <TextView
+                android:id="@+id/hojriy"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/data"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="69dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/img_clock"
+                android:text="@string/beshim"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/img_clock"
+                android:text="@string/ocklock"
+                android:textColor="#FFFFFF"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/search"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_Iskat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line_btn" />
+
+    <EditText
+        android:id="@+id/ed_Iskat"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/shape_editext"
+        android:drawableStart="@drawable/naiti_icon"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:hint="Поиск"
+        android:paddingStart="10sp"
+        android:soundEffectsEnabled="true"
+        android:textIsSelectable="false"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_btn"
+        app:textInputLayoutFocusedRectEnabled="false">
+
+    </EditText>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

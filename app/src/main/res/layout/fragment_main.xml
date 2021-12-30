@@ -1,14 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mainfragment.MainFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolnar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/halal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/scan" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nazad" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Главный"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/line_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolnar">
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="51dp"
+
+            android:background="@drawable/shape_halal">
+
+            <ImageView
+                android:id="@+id/calender_hijriy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/hijriy" />
+
+            <TextView
+                android:id="@+id/namaz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/calender_hijriy"
+                android:text="@string/hijriy"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/saat"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/calender_hijriy"
+                android:text="@string/data"
+                android:textColor="#FFFFFF"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/namaz_time"
+            android:layout_width="170dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/shape_halal">
+
+            <ImageView
+                android:id="@+id/img_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="9dp"
+                android:src="@drawable/ocklok" />
+
+            <TextView
+                android:id="@+id/hojriy"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/data"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="69dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/img_clock"
+                android:text="@string/beshim"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/img_clock"
+                android:text="@string/ocklock"
+                android:textColor="#FFFFFF"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/search"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_Iskat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line_btn" />
+
+    <EditText
+        android:id="@+id/ed_Iskat"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/shape_editext"
+        android:drawableStart="@drawable/naiti_icon"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:hint="Поиск"
+        android:paddingStart="10sp"
+        android:soundEffectsEnabled="true"
+        android:textIsSelectable="false"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_btn"
+        app:textInputLayoutFocusedRectEnabled="false">
+
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="373dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_Iskat">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/banner"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/E_cod"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_halal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner">
+
+
+        <ImageView
+            android:id="@+id/img_scan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/scan" />
+
+        <TextView
+            android:id="@+id/E_cod_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/E_scanner"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/img_vector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="21dp"
+            android:src="@drawable/vektor" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Izbrannoe"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_halal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/E_cod">
+
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/star" />
+
+        <TextView
+            android:id="@+id/izbran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/Izbrannoy"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/img_vector_izbran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="21dp"
+            android:src="@drawable/vektor" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Zayavka"
+        android:layout_width="374dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_halal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Izbrannoe">
+
+
+        <ImageView
+            android:id="@+id/img_zayavka"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/zayav" />
+
+        <TextView
+            android:id="@+id/zayav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="19dp"
+            android:layout_toStartOf="@+id/img_vector_zayavka"
+            android:text="@string/Zayavka"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/img_vector_zayavka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="21dp"
+            android:src="@drawable/vektor" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
