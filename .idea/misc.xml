@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/drawable/namazydyky_shape.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/drawable/nazad.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/drawable/scanner.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/activity_main.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/activity_namaz_time.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_asr_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_bagymdat.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_beshim_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_catalog.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_kundun_shyguusu_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_kuptan_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_main.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_menu.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_sham_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_tahajjud_.xml" value="0.1308876811594203" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
