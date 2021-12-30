@@ -3,18 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bagymdat"
+    android:background="@drawable/tahajjud"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".namaz_fragment.BagymdatFragment">
+    tools:context=".namaz_fragment.Tahajjud_Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="300dp"
+        android:layout_width="306dp"
         android:layout_height="330dp"
+        android:background="@drawable/namazydyky_shape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/namazydyky_shape"
         app:layout_constraintTop_toTopOf="parent">
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +29,6 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginTop="15dp"/>
-
         <TextView
             android:id="@+id/syzyk_prosto"
             android:layout_width="match_parent"
@@ -48,14 +48,14 @@
             android:text="Багымдат"
             android:textSize="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            android:textColor="#F3DC4A"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="20dp"
             android:textStyle="normal"
             android:layout_marginTop="60dp" />
 
         <TextView
-            android:id="@+id/bagymdat_ubaktysy"
+            android:id="@+id/bagymdat_ubagy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -63,7 +63,7 @@
             android:text="04:46"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textColor="#F3DC4A"
+            android:textColor="@color/white"
             android:layout_marginStart="215dp"
             android:layout_marginTop="60dp"/>
 
@@ -200,7 +200,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:textSize="20dp"
-            android:textColor="@color/white"
+            android:textColor="#F3DC4A"
             android:layout_marginStart="20dp"
             android:layout_marginTop="245dp"/>
 
@@ -213,11 +213,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@color/white"
+            android:textColor="#F3DC4A"
             android:layout_marginStart="215dp"
             android:layout_marginTop="245dp"/>
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
