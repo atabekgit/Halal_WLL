@@ -4,18 +4,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.halal.halal_wll.R
+import com.halal.halal_wll.databinding.ActivityMainHalalActovityBinding
 import com.halal.halal_wll.mainfragment.CatalogFragment
 import com.halal.halal_wll.mainfragment.MainFragment
 import com.halal.halal_wll.mainfragment.MenuFragment
 import kotlinx.android.synthetic.main.activity_main_halal_actovity.*
 
 class Main_Halal_Activity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainHalalActovityBinding
     private val mainFragment = MainFragment()
     private val catologFragment = CatalogFragment()
     private val menuFragment = MenuFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_halal_actovity)
+        binding = ActivityMainHalalActovityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         repelaceFragment(mainFragment)
         bottomNavigationView.setOnNavigationItemSelectedListener{
             when(it.itemId){
@@ -42,3 +45,4 @@ class Main_Halal_Activity : AppCompatActivity() {
         super.onBackPressed()
     }
 }
+//atabek

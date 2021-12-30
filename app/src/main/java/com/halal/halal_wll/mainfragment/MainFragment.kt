@@ -15,10 +15,7 @@ class MainFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        namaz_time.setOnClickListener{
-           /* val intent = Intent(this, ::class.java)
-            startActivity(intent)*/
-        }
+
 
     }
 
@@ -29,6 +26,5 @@ class MainFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
-
 
 }
