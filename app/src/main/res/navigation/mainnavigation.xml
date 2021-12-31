@@ -15,11 +15,20 @@
         android:id="@+id/mainFragment"
         android:name="com.halal.halal_wll.mainfragment.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_bagymdatFragment"
+            app:destination="@id/bagymdatFragment" />
+    </fragment>
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.halal.halal_wll.mainfragment.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/bagymdatFragment"
+        android:name="com.halal.halal_wll.namaz_fragment.BagymdatFragment"
+        android:label="fragment_bagymdat"
+        tools:layout="@layout/fragment_bagymdat" />
 
 </navigation>

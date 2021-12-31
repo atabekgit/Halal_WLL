@@ -3,6 +3,7 @@ package com.halal.halal_wll.main_halal_activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
 import com.halal.halal_wll.R
 import com.halal.halal_wll.databinding.ActivityMainHalalActovityBinding
 import com.halal.halal_wll.mainfragment.CatalogFragment
@@ -11,6 +12,7 @@ import com.halal.halal_wll.mainfragment.MenuFragment
 import kotlinx.android.synthetic.main.activity_main_halal_actovity.*
 
 class Main_Halal_Activity : AppCompatActivity() {
+    public lateinit var navController: NavController
     private lateinit var binding: ActivityMainHalalActovityBinding
     private val mainFragment = MainFragment()
     private val catologFragment = CatalogFragment()

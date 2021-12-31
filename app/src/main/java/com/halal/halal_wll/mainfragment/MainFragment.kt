@@ -1,16 +1,23 @@
 package com.halal.halal_wll.mainfragment
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.halal.halal_wll.MainActivity.ChooseActivity
 import com.halal.halal_wll.R
+import com.halal.halal_wll.databinding.FragmentLanguageBinding
+import com.halal.halal_wll.databinding.FragmentMainBinding
+import com.halal.halal_wll.main_halal_activity.Main_Halal_Activity
+import com.halal.halal_wll.namaz_time.Namaz_Time_Activity
 import kotlinx.android.synthetic.main.fragment_main.*
 
 
 class MainFragment : Fragment() {
+    private lateinit var binding: FragmentMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +30,13 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        binding = FragmentMainBinding.inflate(layoutInflater)
+        binding.namazubakyty.setOnClickListener {
+            val intent = Intent(activity?.application, Namaz_Time_Activity::class.java)
+            startActivity(intent)
+            (activity as Activity?)!!.overridePendingTransition(0, 0)
+        }
+        return binding.root
     }
 
 }

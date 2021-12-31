@@ -93,7 +93,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/namaz_time"
+            android:id="@+id/namazubakyty"
             android:layout_width="170dp"
             android:layout_height="51dp"
             android:layout_marginStart="32dp"
