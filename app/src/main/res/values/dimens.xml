@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginBetweenBtn">16dp</dimen>
+    <dimen name="marginWidthBtn">28dp</dimen>
+    <dimen name="paddingAll">18dp</dimen>
+    <dimen name="sizeOfButton">19sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="marginStart">16dp</dimen>
+    <dimen name="width">70dp</dimen>
+    <dimen name="recycler_margin_horizontal">20dp</dimen>
+    <dimen name="marginTopRecyclerView">50dp</dimen>
+    <dimen name="marginBetweenCheckAndText">10dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+</resources>

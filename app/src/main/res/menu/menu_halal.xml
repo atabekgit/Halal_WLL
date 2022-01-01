@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Главный"  android:id="@+id/mainFragment" android:icon="@drawable/main"/>
+    <item android:title="Каталог" android:id="@+id/catalogFragment" android:icon="@drawable/catalog"/>
+    <item android:title="Меню" android:id="@+id/menuFragment"  android:icon="@drawable/menu"/>
+</menu>

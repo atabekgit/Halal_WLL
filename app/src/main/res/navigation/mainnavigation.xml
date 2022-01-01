@@ -5,19 +5,30 @@
     android:id="@+id/mainnavigation"
     app:startDestination="@id/mainFragment">
 
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.halal.halal_wll.mainfragment.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+
     <fragment
         android:id="@+id/catalogFragment"
         android:name="com.halal.halal_wll.mainfragment.CatalogFragment"
         android:label="fragment_catalog"
         tools:layout="@layout/fragment_catalog" />
     <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.halal.halal_wll.mainfragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_bagymdatFragment"
+            app:destination="@id/bagymdatFragment" />
+    </fragment>
+    <fragment
         android:id="@+id/menuFragment"
         android:name="com.halal.halal_wll.mainfragment.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/bagymdatFragment"
+        android:name="com.halal.halal_wll.namaz_fragment.BagymdatFragment"
+        android:label="fragment_bagymdat"
+        tools:layout="@layout/fragment_bagymdat" />
+
 </navigation>

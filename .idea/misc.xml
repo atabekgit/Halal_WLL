@@ -3,30 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Halal_WLL/app/src/main/res/drawable-v24/ic_ellipse_20.xml" value="0.1925925925925926" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1925925925925926" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/drawable/nazad.xml" value="0.1" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/drawable/shape_editext.xml" value="0.26205128205128203" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/activity_choose.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/activity_home.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/activity_main.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/activity_main_halal_actovity.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/activity_namaz_time.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_asr_.xml" value="0.12636612021857924" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_bagymdat.xml" value="0.13114754098360656" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_beshim_.xml" value="0.12636612021857924" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_catalog.xml" value="0.176" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_choose.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_country.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_kuptan_.xml" value="0.1212431693989071" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_language.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_main.xml" value="0.25" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/fragment_menu.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/list_country.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/layout/list_language.xml" value="0.1816123188405797" />
-        <entry key="..\:/Halal_WLL/app/src/main/res/menu/menu_halal.xml" value="0.25" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL4/app/src/main/res/layout/activity_home.xml" value="0.12771739130434784" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL4/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/drawable/namazydyky_shape.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/drawable/nazad.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/drawable/scanner.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/activity_main.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/activity_namaz_time.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_asr_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_bagymdat.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_beshim_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_catalog.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_kundun_shyguusu_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_kuptan_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_main.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_menu.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_sham_.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Halal_WLL88/app/src/main/res/layout/fragment_tahajjud_.xml" value="0.1308876811594203" />
       </map>
     </option>
   </component>

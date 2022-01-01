@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Halal_WLL">
         <activity
-            android:name=".MainActivity.HomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity.ChooseActivity"
             android:exported="false" />
         <activity
             android:name=".namaz_time.Namaz_Time_Activity"
             android:exported="false" />
         <activity
-            android:name=".main_halal_activity.Main_Halal_Actovity"
+            android:name=".main_halal_activity.Main_Halal_Activity"
             android:exported="false" />
         <activity
             android:name=".MainActivity.MainActivity"

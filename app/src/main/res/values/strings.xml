@@ -2,4 +2,30 @@
     <string name="app_name">Halal_WLL</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_next">Далее</string>
+    <string name="text_language">Язык</string>
+    <string name="text_country">Страна</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="textСountryOfList">Кыргызстан</string>
+    <string name="txt_lang_list">Кыргызча</string>
+    <string name="hijriy">Xижрий</string>
+    <string name="data">22 Мухаррам 1443
+</string>
+    <string name="beshim">Бешим</string>
+    <string name="ocklock">13:02</string>
+    <string name="search">Бул жерден издеңиз
+</string>
+    <string name="E_scanner">E кодды</string>
+    <string name="Izbrannoy">Избранное</string>
+    <string name="Zayavka">Заявки</string>
+    <string name="main">Главный</string>
+
 </resources>
