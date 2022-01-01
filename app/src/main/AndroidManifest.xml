@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Halal_WLL">
         <activity
+            android:name=".main_halal_activity.E_Code_MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity.ChooseActivity"
             android:exported="false" />
         <activity

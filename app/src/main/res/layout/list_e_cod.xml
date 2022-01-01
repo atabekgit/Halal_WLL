@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_marginVertical="11dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/btnDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtECode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="E105"
+                android:textColor="#0A8791"
+                android:textSize="26sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserraf"
+                android:layout_marginStart="6dp"
+                android:text="Тамак -аш кошулмалары E105 (Yellow Yellow AB) - бул синтетикалык сары боек..."
+                android:textColor="#0A8791"
+                android:textSize="10dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@id/txtECode"
+                app:layout_constraintStart_toEndOf="@id/txtECode"
+                app:layout_constraintTop_toTopOf="@id/txtECode" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_vector__1_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnDetail">
+
+            <TextView
+                android:id="@+id/btnHaram"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="Харам"
+                android:gravity="center"
+                android:textColor="#E80909"
+                android:textAllCaps="false"
+                android:background="@drawable/shape_list_button"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/btnKumon"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:text="Кумон"
+                android:gravity="center"
+                android:textColor="#F6882F"
+                android:background="@drawable/shape_list_button"
+                android:textAllCaps="false"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/btnHalal"
+                android:layout_width="50dp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:background="@drawable/shape_list_button"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"
+                android:text="Халал"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

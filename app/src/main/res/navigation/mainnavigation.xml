@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_mainFragment_to_bagymdatFragment"
             app:destination="@id/bagymdatFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_e_CodeFragment"
+            app:destination="@id/e_CodeFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
@@ -30,5 +33,10 @@
         android:name="com.halal.halal_wll.namaz_fragment.BagymdatFragment"
         android:label="fragment_bagymdat"
         tools:layout="@layout/fragment_bagymdat" />
+    <fragment
+        android:id="@+id/e_CodeFragment"
+        android:name="com.halal.halal_wll.mainfragment.E_CodeFragment"
+        android:label="fragment_e__code"
+        tools:layout="@layout/fragment_e__code" />
 
 </navigation>

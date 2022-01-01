@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.halal.halal_wll.R
 import com.halal.halal_wll.databinding.ActivityMainHalalActovityBinding
 import com.halal.halal_wll.mainfragment.CatalogFragment
@@ -21,30 +23,31 @@ class Main_Halal_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainHalalActovityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        repelaceFragment(mainFragment)
-        bottomNavigationView.setOnNavigationItemSelectedListener{
-            when(it.itemId){
 
-                R.id.catalogFragment ->repelaceFragment(catologFragment)
-                R.id.mainFragment ->repelaceFragment(mainFragment)
-                R.id.menuFragment ->repelaceFragment(menuFragment)
+
+
+
+        repelaceFragment(mainFragment)
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+
+                R.id.catalogFragment -> repelaceFragment(catologFragment)
+                R.id.mainFragment -> repelaceFragment(mainFragment)
+                R.id.menuFragment -> repelaceFragment(menuFragment)
             }
             true
 
         }
     }
     private fun repelaceFragment(fragment: Fragment) {
-        if (fragment != null){
+        if (fragment != null) {
             val transition = supportFragmentManager.beginTransaction()
-            transition.replace(R.id.fragmentContainerView,fragment)
+            transition.replace(R.id.MainfragmentContainerView, fragment)
             transition.commit()
         }
 
 
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-    }
+
 }
-//atabek
