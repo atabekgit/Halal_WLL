@@ -27,5 +27,10 @@
     <string name="Izbrannoy">Избранное</string>
     <string name="Zayavka">Заявки</string>
     <string name="main">Главный</string>
+    <string name="AkylbekuKubanysh">Акылбек у Кубаныч</string>
+    <string name="LishnyyKabinet">Личный кабинет</string>
+    <string name="Sobytie">Событие</string>
+
+
 
 </resources>
